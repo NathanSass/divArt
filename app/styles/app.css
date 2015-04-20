@@ -30,7 +30,9 @@ nav {
     margin-left: 20px;
     opacity: .6;
     position: relative;
-    width: 30px; }
+    width: 30px;
+    -webkit-transition: background .5s;
+            transition: background .5s; }
     nav .nav-sphere:hover {
       background: #DDDDDD; }
 
@@ -119,4 +121,57 @@ nav .nav-focus {
   60% {
     margin: centeringMargin(60, 30)px 0;
     height: 80px;
+    opacity: .1; } }
+
+.race-track {
+  -webkit-animation: together-apart 3s infinite;
+          animation: together-apart 3s infinite;
+  background: rgba(53, 53, 53, 0.2);
+  position: relative; }
+
+.race-car {
+  -webkit-animation: race-car 5s infinite;
+          animation: race-car 5s infinite;
+  position: absolute;
+  background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #353535, rgba(53, 53, 53, 0));
+  background: linear-gradient(to right, rgba(53, 53, 53, 0), #353535, rgba(53, 53, 53, 0));
+  width: 30vw;
+  height: 100%; }
+
+@-webkit-keyframes race-car {
+  0%, 100% {
+    left: -30vw; }
+
+  40% {
+    left: 130vw; } }
+
+@keyframes race-car {
+  0%, 100% {
+    left: -30vw; }
+
+  40% {
+    left: 130vw; } }
+
+@-webkit-keyframes together-apart {
+  0%, 100% {
+    height: 10px;
+    margin: 0px 0;
+    /*for centering purposes*/
+    opacity: .9; }
+
+  60% {
+    margin: 10px 0;
+    height: 40px;
+    opacity: .1; } }
+
+@keyframes together-apart {
+  0%, 100% {
+    height: 10px;
+    margin: 0px 0;
+    /*for centering purposes*/
+    opacity: .9; }
+
+  60% {
+    margin: 10px 0;
+    height: 40px;
     opacity: .1; } }
