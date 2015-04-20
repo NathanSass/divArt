@@ -30,7 +30,7 @@ body {
 
 .pulse {
   animation: pulser 3s infinite;
-  background: linear-gradient( to right, rgba(255, 0, 0, 0), $dk-gray, rgba(255, 0, 0, 0) );
+  background: linear-gradient( to right, rgba(53, 53, 53, 0), $dk-gray, rgba(53, 53, 53, 0) );
   position: relative;
 }
 
@@ -54,8 +54,8 @@ body {
 .top-bottom-pulse {
   animation: top-bottom-pulse 4s infinite;
   position: relative;
-  background: linear-gradient( rgba(255, 0, 0, 0), $dk-gray, rgba(255, 0, 0, 0) ), 
-              linear-gradient( to right, rgba(255, 0, 0, 0), $dk-gray, rgba(255, 0, 0, 0) );
+  background: linear-gradient( rgba(53, 53, 53, 0), $dk-gray, rgba(53, 53, 53, 0) ), 
+              linear-gradient( to right, rgba(53, 53, 53, 0), $dk-gray, rgba(53, 53, 53, 0) );
 }
 
 @keyframes top-bottom-pulse{
