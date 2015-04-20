@@ -130,8 +130,8 @@ nav .nav-focus {
   position: relative; }
 
 .race-car {
-  -webkit-animation: race-car 5s infinite;
-          animation: race-car 5s infinite;
+  -webkit-animation: race-car 6s infinite;
+          animation: race-car 6s infinite;
   position: absolute;
   background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #353535, rgba(53, 53, 53, 0));
   background: linear-gradient(to right, rgba(53, 53, 53, 0), #353535, rgba(53, 53, 53, 0));
