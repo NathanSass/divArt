@@ -24,7 +24,7 @@ body {
     /*for centering purposes*/
     opacity: .9; }
 
-  50% {
+  40% {
     margin: 20px 0;
     /* inital margin - ((intial margin - width (or height))/2) */
     height: 30px;
@@ -37,7 +37,7 @@ body {
     /*for centering purposes*/
     opacity: .9; }
 
-  50% {
+  40% {
     margin: 20px 0;
     /* inital margin - ((intial margin - width (or height))/2) */
     height: 30px;
@@ -57,7 +57,7 @@ body {
     /*for centering purposes*/
     opacity: .6; }
 
-  50% {
+  60% {
     margin: 45px 0;
     /* inital margin - ((intial margin - width (or height))/2) */
     height: 80px;
@@ -70,7 +70,7 @@ body {
     /*for centering purposes*/
     opacity: .6; }
 
-  50% {
+  60% {
     margin: 45px 0;
     /* inital margin - ((intial margin - width (or height))/2) */
     height: 80px;
