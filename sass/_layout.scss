@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+$breaker-height: 7em;
+
+$black: #111111;
+$lime: #01FF70;
+$gray: #AAAAAA;
+$dk-gray: #353535;
+$silver: #DDDDDD;
+$teal: #39CCCC;
+$olive: #3D9970;
+$purple: #B10DC9;
+$blue: #0074D9;
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fafafa;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
