@@ -1,2 +1,2 @@
-# Personal Site
-Check me out [here!](http://nathansass.github.io/personalSite2/)
+# DivArt
+Check out tha [wip!](http://nathansass.github.io/divArt/)
