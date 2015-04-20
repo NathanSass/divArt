@@ -10,6 +10,11 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0; }
 
+article {
+  display: none; }
+  article.current-page {
+    display: block; }
+
 .title {
   display: inline-block; }
 
@@ -26,11 +31,13 @@ nav {
     opacity: .6;
     position: relative;
     width: 30px; }
+    nav .nav-sphere:hover {
+      background: #DDDDDD; }
 
 nav .nav-focus {
-  -webkit-animation: navCycle 10s infinite;
-          animation: navCycle 10s infinite;
-  opacity: .4; }
+  -webkit-animation: navCycle 6s infinite;
+          animation: navCycle 6s infinite;
+  opacity: .6; }
 
 @-webkit-keyframes navCycle {
   0%, 100% {
@@ -95,7 +102,7 @@ nav .nav-focus {
     height: 30px;
     margin: 60px 0;
     /*for centering purposes*/
-    opacity: .6; }
+    opacity: .9; }
 
   60% {
     margin: centeringMargin(60, 30)px 0;
@@ -107,7 +114,7 @@ nav .nav-focus {
     height: 30px;
     margin: 60px 0;
     /*for centering purposes*/
-    opacity: .6; }
+    opacity: .9; }
 
   60% {
     margin: centeringMargin(60, 30)px 0;

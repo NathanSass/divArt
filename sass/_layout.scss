@@ -27,6 +27,13 @@ body {
   margin: 0;
 }
 
+article {
+  display: none;
+  &.current-page {
+    display: block;
+  }
+}
+
 .title {
   display: inline-block;
 }
@@ -45,12 +52,15 @@ nav {
     opacity: .6;
     position: relative;
     width: 30px;
+    &:hover {
+      background: $silver;
+    }
   }
 }
 
 nav .nav-focus {
-  animation: navCycle 10s infinite;
-  opacity: .4;
+  animation: navCycle 6s infinite;
+  opacity: .6;
 }
 
 @keyframes navCycle {
@@ -97,7 +107,7 @@ nav .nav-focus {
   0%, 100% {
     height: $height+px;
     margin: $margin+px 0; /*for centering purposes*/
-    opacity: .6;
+    opacity: .9;
   }
   60% {
     margin: centeringMargin($margin,$height)+px 0;
