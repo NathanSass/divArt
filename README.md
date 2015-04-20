@@ -1,2 +1,2 @@
 # DivArt
-Check out tha [wip!](http://nathansass.github.io/divArt/)
+Check out the wip [here!](http://nathansass.github.io/divArt/)
