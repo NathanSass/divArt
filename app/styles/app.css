@@ -15,6 +15,7 @@ body {
 div:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
+  border: 2px #B10DC9 solid;
   cursor: pointer; }
 
 article {
@@ -98,6 +99,40 @@ nav .nav-focus {
     margin: centeringMargin(30, 10)px 0;
     height: 30px;
     opacity: .1; } }
+
+@-webkit-keyframes change-gradient {
+  0%, 100% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #0074D9, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #0074D9, rgba(53, 53, 53, 0)); }
+
+  25% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #39CCCC, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #39CCCC, rgba(53, 53, 53, 0)); }
+
+  50% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #85144b, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #85144b, rgba(53, 53, 53, 0)); }
+
+  75% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #FF4136, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #FF4136, rgba(53, 53, 53, 0)); } }
+
+@keyframes change-gradient {
+  0%, 100% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #0074D9, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #0074D9, rgba(53, 53, 53, 0)); }
+
+  25% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #39CCCC, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #39CCCC, rgba(53, 53, 53, 0)); }
+
+  50% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #85144b, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #85144b, rgba(53, 53, 53, 0)); }
+
+  75% {
+    background: -webkit-linear-gradient(left, rgba(53, 53, 53, 0), #FF4136, rgba(53, 53, 53, 0));
+    background: linear-gradient(to right, rgba(53, 53, 53, 0), #FF4136, rgba(53, 53, 53, 0)); } }
 
 .top-bottom-pulse {
   -webkit-animation: top-bottom-pulse 4s infinite;
