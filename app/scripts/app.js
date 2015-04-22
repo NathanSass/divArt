@@ -1,5 +1,9 @@
 (function (window, undefined) {
   'use strict';
+
+  var rainbowDivAnimating;
+  var $currentDiv;
+  var firstClick = true;
   
   function changePage(e) {
     e.preventDefault();
@@ -29,7 +33,7 @@
     return '#' + byte2Hex(r) + byte2Hex(g) + byte2Hex(b);
   }
 
-  function colorText(str,phase) {
+  function getColor(str,phase) {
     if (phase == undefined) phase = 0;
     center = 128;
     width = 127;
@@ -42,6 +46,33 @@
     }
   }
 
-  
+  function rainbowBackground(e) {
+    var color = 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')';
+    var newGradient = 'linear-gradient(to right, rgba(53, 53, 53, 0),'+ color +', rgba(53, 53, 53, 0))';
+    console.log(newGradient);
+    $currentDiv.css({
+     'background' : newGradient
+    });
+  }
+
+
   $('nav').on('click', '.nav-sphere', changePage);
+  
+  $('div').on('click', function (e) {
+    if (firstClick) {
+      $currentDiv = $(e.target);
+      rainbowDivAnimating = setInterval(rainbowBackground, 200);
+      firstClick = false;
+      return;
+    }else {
+       clearInterval(rainbowDivAnimating)
+    }
+    firstClick = true;
+  });
+  
+  // $('div').on('mouseleave', function(){ clearInterval(rainbowDivAnimating); });
+
+
+
+
 })(window);
